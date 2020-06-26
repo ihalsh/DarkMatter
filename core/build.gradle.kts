@@ -18,7 +18,7 @@ dependencies {
     // LibKTX kotlin extensions, optional but recommended.
     // The complete list of modules is available at https://github.com/libktx/ktx
     implementation("io.github.libktx:ktx-app:$ktxVersion")
-    implementation("io.github.libktx:ktx-actors:$ktxVersion")
+    implementation("io.github.libktx:ktx-graphics:$ktxVersion")
     implementation("io.github.libktx:ktx-async:$ktxVersion")
     implementation("io.github.libktx:ktx-assets-async:$ktxVersion")
     implementation("io.github.libktx:ktx-collections:$ktxVersion")
