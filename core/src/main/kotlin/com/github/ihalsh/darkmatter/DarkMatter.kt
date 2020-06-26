@@ -1,5 +1,7 @@
 package com.github.ihalsh.darkmatter
 
+import com.badlogic.ashley.core.Engine
+import com.badlogic.ashley.core.PooledEngine
 import com.badlogic.gdx.Application.LOG_DEBUG
 import com.badlogic.gdx.Gdx.app
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
@@ -14,6 +16,7 @@ private val LOG = logger<DarkMatter>()
 
 class DarkMatter : KtxGame<DarkMatterScreen>() {
     val batch by lazy { SpriteBatch() }
+    val engine: Engine by lazy { PooledEngine() }
 
     override fun create() {
         app.logLevel = LOG_DEBUG

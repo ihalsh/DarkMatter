@@ -8,6 +8,7 @@ buildscript {
     val coroutinesVersion by extra("1.3.5")
     val gdxVersion by extra("1.9.10")
     val ktxVersion by extra("1.9.10-b6")
+    val ashleyVersion by extra ("1.7.3")
     val junitVersion by extra("4.12")
 
     repositories {
