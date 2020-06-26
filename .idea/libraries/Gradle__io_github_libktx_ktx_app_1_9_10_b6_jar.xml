@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.libktx:ktx-app:1.9.10-b6@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.libktx/ktx-app/1.9.10-b6/29bd49c0d36dbbf55e24eb9890c746b8384b112d/ktx-app-1.9.10-b6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.libktx/ktx-app/1.9.10-b6/aa064e02b2ec188dcb5eb756076c38999e963efe/ktx-app-1.9.10-b6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.libktx/ktx-app/1.9.10-b6/b934cf0bb083ed4bcea8ed94361752a551649377/ktx-app-1.9.10-b6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

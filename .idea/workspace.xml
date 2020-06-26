@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e3b375d0-48ae-4c9a-a21a-41ce7a473543" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="02c8af7508e506fc" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bA12lRCo6vYTicgWFYTqG1BFM0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle.kts" />
+    <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17480469" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Android\LibGDX\DarkMatter\desktop\src\main\kotlin\com\github\ihalsh\darkmatter" />
+      <recent name="D:\Android\LibGDX\15PuzzleKotlin\android\assets\img" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.github.ihalsh.darkmatter" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Android\LibGDX\15PuzzleKotlin\android\assets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.DesktopLauncherKt">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="android" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="android" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DesktopLauncherKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="desktop" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.github.ihalsh.darkmatter.DesktopLauncherKt" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/android/assets" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Android App.android" />
+      <item itemvalue="Kotlin.DesktopLauncherKt" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.DesktopLauncherKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3b375d0-48ae-4c9a-a21a-41ce7a473543" name="Default Changelist" comment="" />
+      <created>1588059878719</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588059878719</updated>
+      <workItem from="1588252157592" duration="1712000" />
+      <workItem from="1588256792828" duration="693000" />
+      <workItem from="1588257524365" duration="383000" />
+      <workItem from="1588257946610" duration="959000" />
+      <workItem from="1588264001530" duration="86000" />
+      <workItem from="1588266489098" duration="3600000" />
+      <workItem from="1588270823315" duration="22000" />
+      <workItem from="1593159920189" duration="925000" />
+      <workItem from="1593160869731" duration="296000" />
+      <workItem from="1593161492921" duration="4755000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1588247296361</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588247296361</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="516" y="231" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593163428908">
+      <screen x="74" y="0" width="1974" height="1152" />
+    </state>
+    <state x="516" y="231" key="#com.intellij.execution.impl.EditConfigurationsDialog/74.0.1974.1152@74.0.1974.1152" timestamp="1593163428908" />
+    <state x="840" y="354" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1593162736181">
+      <screen x="74" y="0" width="1974" height="1152" />
+    </state>
+    <state x="840" y="354" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/74.0.1974.1152@74.0.1974.1152" timestamp="1593162736181" />
+    <state x="166" y="93" width="1789" height="966" key="AVDManager" timestamp="1593163560376">
+      <screen x="74" y="0" width="1974" height="1152" />
+    </state>
+    <state x="166" y="93" width="1789" height="966" key="AVDManager/74.0.1974.1152@74.0.1974.1152" timestamp="1593163560376" />
+    <state x="842" y="331" key="FileChooserDialogImpl" timestamp="1593160166037">
+      <screen x="74" y="0" width="1974" height="1152" />
+    </state>
+    <state x="842" y="331" key="FileChooserDialogImpl/74.0.1974.1152@74.0.1974.1152" timestamp="1593160166037" />
+    <state width="1932" height="436" key="GridCell.Tab.0.bottom" timestamp="1593166811065">
+      <screen x="74" y="0" width="1974" height="1152" />
+    </state>
+    <state width="1932" height="436" key="GridCell.Tab.0.bottom/74.0.1974.1152@74.0.1974.1152" timestamp="1593166811065" />
+    <state width="1932" height="436" key="GridCell.Tab.0.center" timestamp="1593166811065">
+      <screen x="74" y="0" width="1974" height="1152" />
+    </state>
+    <state width="1932" height="436" key="GridCell.Tab.0.center/74.0.1974.1152@74.0.1974.1152" timestamp="1593166811065" />
+    <state width="1932" height="436" key="GridCell.Tab.0.left" timestamp="1593166811065">
+      <screen x="74" y="0" width="1974" height="1152" />
+    </state>
+    <state width="1932" height="436" key="GridCell.Tab.0.left/74.0.1974.1152@74.0.1974.1152" timestamp="1593166811065" />
+    <state width="1932" height="436" key="GridCell.Tab.0.right" timestamp="1593166811065">
+      <screen x="74" y="0" width="1974" height="1152" />
+    </state>
+    <state width="1932" height="436" key="GridCell.Tab.0.right/74.0.1974.1152@74.0.1974.1152" timestamp="1593166811065" />
+    <state x="570" y="221" key="SettingsEditor" timestamp="1593162435261">
+      <screen x="74" y="0" width="1974" height="1152" />
+    </state>
+    <state x="570" y="221" key="SettingsEditor/74.0.1974.1152@74.0.1974.1152" timestamp="1593162435261" />
+    <state x="532" y="272" key="new project wizard" timestamp="1593160564723">
+      <screen x="74" y="0" width="1974" height="1152" />
+    </state>
+    <state x="532" y="272" key="new project wizard/74.0.1974.1152@74.0.1974.1152" timestamp="1593160564723" />
+    <state x="723" y="253" width="672" height="678" key="search.everywhere.popup" timestamp="1593161104275">
+      <screen x="74" y="0" width="1974" height="1152" />
+    </state>
+    <state x="723" y="253" width="672" height="678" key="search.everywhere.popup/74.0.1974.1152@74.0.1974.1152" timestamp="1593161104275" />
+  </component>
+</project>

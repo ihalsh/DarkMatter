@@ -1,0 +1,4 @@
+#Fri Jun 26 12:41:17 EEST 2020
+base.0=D\:\\Android\\LibGDX\\DarkMatter\\android\\build\\intermediates\\dex\\debug\\out\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
