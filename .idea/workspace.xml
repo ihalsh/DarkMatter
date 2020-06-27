@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3b375d0-48ae-4c9a-a21a-41ce7a473543" name="Default Changelist" comment="" />
+    <list default="true" id="e3b375d0-48ae-4c9a-a21a-41ce7a473543" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/android/android.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/ecs/system/PlayerInputSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/ecs/system/PlayerInputSystem.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_27" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="02c8af7508e506fc" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -53,7 +57,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/screens" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/ecs/component" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17480469" />
@@ -62,9 +66,6 @@
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateKotlinClassDialog.RecentsKey">
-      <recent name="com.github.ihalsh.darkmatter" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Android\LibGDX\DarkMatter\desktop\src\main\kotlin\com\github\ihalsh\darkmatter" />
       <recent name="D:\Android\LibGDX\15PuzzleKotlin\android\assets\img" />
@@ -74,8 +75,12 @@
       <recent name="com.github.ihalsh.darkmatter" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Android\LibGDX\DarkMatter\core\src\main\kotlin\com\github\ihalsh\darkmatter\ecs\component" />
       <recent name="D:\Android\LibGDX\DarkMatter\core\src\main\kotlin\com\github\ihalsh\darkmatter\screens" />
       <recent name="D:\Android\LibGDX\15PuzzleKotlin\android\assets" />
+    </key>
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="com.github.ihalsh.darkmatter" />
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.DesktopLauncherKt">
@@ -194,7 +199,8 @@
       <workItem from="1593159920189" duration="925000" />
       <workItem from="1593160869731" duration="296000" />
       <workItem from="1593161492921" duration="17141000" />
-      <workItem from="1593253764268" duration="6977000" />
+      <workItem from="1593253764268" duration="13638000" />
+      <workItem from="1593335731409" duration="1662000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1588247296361</created>
@@ -273,7 +279,21 @@
       <option name="project" value="LOCAL" />
       <updated>1593280448038</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Render System">
+      <created>1593281042222</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1593281042222</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Player System">
+      <created>1593289804162</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1593289804162</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,17 +323,18 @@
     <MESSAGE value="Viewports" />
     <MESSAGE value="Ashley and its components" />
     <MESSAGE value="Render System" />
-    <option name="LAST_COMMIT_MESSAGE" value="Render System" />
+    <MESSAGE value="Player System" />
+    <option name="LAST_COMMIT_MESSAGE" value="Player System" />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="231" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593163428908">
       <screen x="74" y="0" width="1974" height="1152" />
     </state>
     <state x="516" y="231" key="#com.intellij.execution.impl.EditConfigurationsDialog/74.0.1974.1152@74.0.1974.1152" timestamp="1593163428908" />
-    <state x="852" y="292" key="#com.intellij.ide.util.MemberChooser" timestamp="1593257976755">
+    <state x="852" y="292" key="#com.intellij.ide.util.MemberChooser" timestamp="1593287371806">
       <screen x="74" y="0" width="1974" height="1152" />
     </state>
-    <state x="852" y="292" key="#com.intellij.ide.util.MemberChooser/74.0.1974.1152@74.0.1974.1152" timestamp="1593257976755" />
+    <state x="852" y="292" key="#com.intellij.ide.util.MemberChooser/74.0.1974.1152@74.0.1974.1152" timestamp="1593287371806" />
     <state x="753" y="500" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1593197261861">
       <screen x="74" y="0" width="1974" height="1152" />
     </state>
@@ -326,30 +347,30 @@
       <screen x="74" y="0" width="1974" height="1152" />
     </state>
     <state x="166" y="93" width="1789" height="966" key="AVDManager/74.0.1974.1152@74.0.1974.1152" timestamp="1593163560376" />
-    <state x="564" y="151" key="CommitChangelistDialog2" timestamp="1593280443440">
+    <state x="564" y="151" key="CommitChangelistDialog2" timestamp="1593289797200">
       <screen x="74" y="0" width="1974" height="1152" />
     </state>
-    <state x="564" y="151" key="CommitChangelistDialog2/74.0.1974.1152@74.0.1974.1152" timestamp="1593280443440" />
+    <state x="564" y="151" key="CommitChangelistDialog2/74.0.1974.1152@74.0.1974.1152" timestamp="1593289797200" />
     <state x="842" y="331" key="FileChooserDialogImpl" timestamp="1593160166037">
       <screen x="74" y="0" width="1974" height="1152" />
     </state>
     <state x="842" y="331" key="FileChooserDialogImpl/74.0.1974.1152@74.0.1974.1152" timestamp="1593160166037" />
-    <state width="1932" height="436" key="GridCell.Tab.0.bottom" timestamp="1593258373407">
+    <state width="1932" height="436" key="GridCell.Tab.0.bottom" timestamp="1593336694109">
       <screen x="74" y="0" width="1974" height="1152" />
     </state>
-    <state width="1932" height="436" key="GridCell.Tab.0.bottom/74.0.1974.1152@74.0.1974.1152" timestamp="1593258373407" />
-    <state width="1932" height="436" key="GridCell.Tab.0.center" timestamp="1593258373406">
+    <state width="1932" height="436" key="GridCell.Tab.0.bottom/74.0.1974.1152@74.0.1974.1152" timestamp="1593336694109" />
+    <state width="1932" height="436" key="GridCell.Tab.0.center" timestamp="1593336694109">
       <screen x="74" y="0" width="1974" height="1152" />
     </state>
-    <state width="1932" height="436" key="GridCell.Tab.0.center/74.0.1974.1152@74.0.1974.1152" timestamp="1593258373406" />
-    <state width="1932" height="436" key="GridCell.Tab.0.left" timestamp="1593258373406">
+    <state width="1932" height="436" key="GridCell.Tab.0.center/74.0.1974.1152@74.0.1974.1152" timestamp="1593336694109" />
+    <state width="1932" height="436" key="GridCell.Tab.0.left" timestamp="1593336694109">
       <screen x="74" y="0" width="1974" height="1152" />
     </state>
-    <state width="1932" height="436" key="GridCell.Tab.0.left/74.0.1974.1152@74.0.1974.1152" timestamp="1593258373406" />
-    <state width="1932" height="436" key="GridCell.Tab.0.right" timestamp="1593258373407">
+    <state width="1932" height="436" key="GridCell.Tab.0.left/74.0.1974.1152@74.0.1974.1152" timestamp="1593336694109" />
+    <state width="1932" height="436" key="GridCell.Tab.0.right" timestamp="1593336694109">
       <screen x="74" y="0" width="1974" height="1152" />
     </state>
-    <state width="1932" height="436" key="GridCell.Tab.0.right/74.0.1974.1152@74.0.1974.1152" timestamp="1593258373407" />
+    <state width="1932" height="436" key="GridCell.Tab.0.right/74.0.1974.1152@74.0.1974.1152" timestamp="1593336694109" />
     <state x="570" y="221" key="SettingsEditor" timestamp="1593162435261">
       <screen x="74" y="0" width="1974" height="1152" />
     </state>
@@ -362,9 +383,9 @@
       <screen x="74" y="0" width="1974" height="1152" />
     </state>
     <state x="532" y="272" key="new project wizard/74.0.1974.1152@74.0.1974.1152" timestamp="1593160564723" />
-    <state x="723" y="253" width="672" height="678" key="search.everywhere.popup" timestamp="1593260368838">
+    <state x="723" y="253" width="672" height="678" key="search.everywhere.popup" timestamp="1593287301768">
       <screen x="74" y="0" width="1974" height="1152" />
     </state>
-    <state x="723" y="253" width="672" height="678" key="search.everywhere.popup/74.0.1974.1152@74.0.1974.1152" timestamp="1593260368838" />
+    <state x="723" y="253" width="672" height="678" key="search.everywhere.popup/74.0.1974.1152@74.0.1974.1152" timestamp="1593287301768" />
   </component>
 </project>
