@@ -22,6 +22,6 @@ class PlayerComponent : Component, Poolable {
         distance = 0f
     }
     companion object {
-        val mapper = mapperFor<FacingComponent>()
+        val mapper = mapperFor<PlayerComponent>()
     }
 }

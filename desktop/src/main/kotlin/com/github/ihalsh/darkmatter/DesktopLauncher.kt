@@ -6,6 +6,6 @@ import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration
 fun main() {
     Lwjgl3Application(DarkMatter(), Lwjgl3ApplicationConfiguration().apply {
         setTitle("DarkMatter")
-        setWindowedMode(9*48, 16*48)
+        setWindowedMode(V_WIDTH*48, V_HEIGHT*48)
     })
 }
