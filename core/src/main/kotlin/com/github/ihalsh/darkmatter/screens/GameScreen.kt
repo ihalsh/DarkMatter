@@ -13,17 +13,17 @@ import ktx.log.logger
 private val LOG = logger<GameScreen>()
 
 class GameScreen(game: DarkMatter) : DarkMatterScreen(game) {
-    private val player = engine.entity {
-        with<TransformComponent> {
-            position.set(4f, 8f, 0f)
-        }
-        with<GraphicComponent>()
-        with<PlayerComponent>()
-        with<FacingComponent>()
-    }
 
     override fun show() {
         LOG.debug { "GameScreen is shown" }
+        engine.entity {
+            with<TransformComponent> {
+                position.set(4f, 8f, 0f)
+            }
+            with<GraphicComponent>()
+            with<PlayerComponent>()
+            with<FacingComponent>()
+        }
     }
 
     override fun render(delta: Float) {

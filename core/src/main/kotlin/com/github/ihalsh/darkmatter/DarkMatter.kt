@@ -5,9 +5,8 @@ import com.badlogic.ashley.core.PooledEngine
 import com.badlogic.gdx.Application.LOG_DEBUG
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.Gdx.app
-import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
-import com.badlogic.gdx.graphics.g2d.TextureRegion
+import com.badlogic.gdx.graphics.g2d.TextureAtlas
 import com.badlogic.gdx.utils.viewport.FitViewport
 import com.github.ihalsh.darkmatter.ecs.system.PlayerAnimationSystem
 import com.github.ihalsh.darkmatter.ecs.system.PlayerInputSystem
@@ -15,7 +14,6 @@ import com.github.ihalsh.darkmatter.ecs.system.RenderSystem
 import com.github.ihalsh.darkmatter.screens.DarkMatterScreen
 import com.github.ihalsh.darkmatter.screens.GameScreen
 import ktx.app.KtxGame
-import ktx.ashley.add
 import ktx.log.debug
 import ktx.log.logger
 
@@ -26,15 +24,18 @@ class DarkMatter : KtxGame<DarkMatterScreen>() {
     val gameViewport = FitViewport(9f, 16f)
     val batch by lazy { SpriteBatch() }
 
-    private val defaulRegion by lazy { TextureRegion(Texture(Gdx.files.internal("graphics/ship_base.png"))) }
-    private val leftRegion by lazy { TextureRegion(Texture(Gdx.files.internal("graphics/ship_left.png"))) }
-    private val rightRegion by lazy { TextureRegion(Texture(Gdx.files.internal("graphics/ship_right.png"))) }
+    private val textureAtlas by lazy { TextureAtlas(Gdx.files.internal("graphics/graphics.atlas")) }
 
-    val engine: Engine by lazy { PooledEngine().apply {
-        addSystem(PlayerInputSystem(gameViewport))
-        addSystem(PlayerAnimationSystem(defaulRegion, leftRegion, rightRegion))
-        addSystem(RenderSystem(batch, gameViewport))
-    } }
+    val engine: Engine by lazy {
+        PooledEngine().apply {
+            addSystem(PlayerInputSystem(gameViewport))
+            addSystem(PlayerAnimationSystem(
+                    textureAtlas.findRegion("ship_base"),
+                    textureAtlas.findRegion("ship_left"),
+                    textureAtlas.findRegion("ship_right")))
+            addSystem(RenderSystem(batch, gameViewport))
+        }
+    }
 
     override fun create() {
         app.logLevel = LOG_DEBUG
@@ -47,10 +48,7 @@ class DarkMatter : KtxGame<DarkMatterScreen>() {
         super.dispose()
         LOG.debug { "Sprites disposed: ${batch.maxSpritesInBatch}" }
         batch.dispose()
-
-        defaulRegion.texture.dispose()
-        leftRegion.texture.dispose()
-        rightRegion.texture.dispose()
+        textureAtlas.dispose()
     }
 }
 

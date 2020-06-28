@@ -16,10 +16,12 @@ class TransformComponent : Component, Poolable, Comparable<TransformComponent> {
         size.set(1f, 1f)
         rotationDeg = 0f
     }
-    override fun compareTo(other: TransformComponent): Int {
-        val zDifference = (position.z - other.position.z).toInt()
-        return if (zDifference != 0) zDifference else (position.y - other.position.y).toInt()
-    }
+
+    override fun compareTo(other: TransformComponent): Int =
+            position.z.compareTo(other.position.z).let {
+                return if (it != 0) it else position.y.compareTo(other.position.y)
+            }
+
     companion object {
         val mapper = mapperFor<TransformComponent>()
     }
