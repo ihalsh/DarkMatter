@@ -16,7 +16,7 @@ class GameScreen(game: DarkMatter) : DarkMatterScreen(game) {
         engine.entity {
             with<PlayerComponent>()
             with<FacingComponent>()
-            with<TransformComponent> { position.set(4f, 8f, 0f) }
+            with<TransformComponent> { position.set(4f, 4f, 0f) }
             with<GraphicComponent>()
             with<MoveComponent>()
         }
@@ -24,5 +24,6 @@ class GameScreen(game: DarkMatter) : DarkMatterScreen(game) {
 
     override fun render(delta: Float) {
         engine.update(delta)
+        LOG.debug { "Rendercalls: ${game.batch.renderCalls}" }
     }
 }
