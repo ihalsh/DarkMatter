@@ -3,6 +3,7 @@ package com.github.ihalsh.darkmatter.ecs.system
 import com.badlogic.ashley.core.Entity
 import com.badlogic.ashley.systems.IteratingSystem
 import com.badlogic.gdx.math.MathUtils.clamp
+import com.badlogic.gdx.math.MathUtils.lerp
 import com.github.ihalsh.darkmatter.V_HEIGHT
 import com.github.ihalsh.darkmatter.V_WIDTH
 import com.github.ihalsh.darkmatter.ecs.component.*
@@ -29,7 +30,22 @@ class MoveSystem : IteratingSystem(allOf(TransformComponent::class, MoveComponen
         acc += deltaTime
         while (acc >= UPDATE_RATE) {
             acc -= UPDATE_RATE
+
+            entities.forEach { entity ->
+                entity[TransformComponent.mapper]?.let { transform ->
+                    transform.prevPosition.set(transform.position)
+                }
+            }
             super.update(UPDATE_RATE)
+        }
+        val alpha = acc / UPDATE_RATE
+        entities.forEach { entity ->
+            entity[TransformComponent.mapper]?.let { transform ->
+                transform.interpolatedPosition.set(
+                        lerp(transform.prevPosition.x, transform.position.x, alpha),
+                        lerp(transform.prevPosition.y, transform.position.y, alpha),
+                        transform.position.z)
+            }
         }
     }
 
