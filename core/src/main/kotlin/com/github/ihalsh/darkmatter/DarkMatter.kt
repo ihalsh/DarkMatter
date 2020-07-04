@@ -25,18 +25,19 @@ class DarkMatter : KtxGame<DarkMatterScreen>() {
     val gameViewport = FitViewport(V_WIDTH.toFloat(), V_HEIGHT.toFloat())
     val batch by lazy { SpriteBatch() }
 
-    private val textureAtlas by lazy { TextureAtlas(Gdx.files.internal("graphics/graphics.atlas")) }
+    private val graphicAtlas by lazy { TextureAtlas(Gdx.files.internal("graphics/graphics.atlas")) }
 
     val engine: Engine by lazy {
         PooledEngine().apply {
             addSystem(PlayerInputSystem(gameViewport))
             addSystem(PlayerAnimationSystem(
-                    textureAtlas.findRegion("ship_base"),
-                    textureAtlas.findRegion("ship_left"),
-                    textureAtlas.findRegion("ship_right")))
+                    graphicAtlas.findRegion("ship_base"),
+                    graphicAtlas.findRegion("ship_left"),
+                    graphicAtlas.findRegion("ship_right")))
             addSystem(MoveSystem())
             addSystem(DamageSystem())
             addSystem(DebugSystem())
+            addSystem(AnimationSystem(graphicAtlas))
             addSystem(RenderSystem(batch, gameViewport))
             addSystem(RemoveSystem())
         }
@@ -53,7 +54,7 @@ class DarkMatter : KtxGame<DarkMatterScreen>() {
         super.dispose()
         LOG.debug { "Sprites disposed: ${batch.maxSpritesInBatch}" }
         batch.dispose()
-        textureAtlas.dispose()
+        graphicAtlas.dispose()
     }
 }
 

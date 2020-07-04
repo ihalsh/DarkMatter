@@ -25,12 +25,10 @@ private const val MAX_HOR_SPEED = 5.5f
 class MoveSystem : IteratingSystem(allOf(TransformComponent::class, MoveComponent::class)
         .exclude(RemoveComponent::class).get()) {
     private var acc = 0f
-
     override fun update(deltaTime: Float) {
         acc += deltaTime
         while (acc >= UPDATE_RATE) {
             acc -= UPDATE_RATE
-
             entities.forEach { entity ->
                 entity[TransformComponent.mapper]?.let { transform ->
                     transform.prevPosition.set(transform.position)
@@ -75,9 +73,8 @@ class MoveSystem : IteratingSystem(allOf(TransformComponent::class, MoveComponen
             else -> 0f
         }.run { clamp(this, -MAX_HOR_SPEED, MAX_HOR_SPEED) }
 
-        move.speed.y = (move.speed.y - VER_ACCELERATION * deltaTime).run {
-            clamp(this, -MAX_VER_NEG_PLAYER_SPEED, MAX_VER_POS_PLAYER_SPEED)
-        }
+        move.speed.y = (move.speed.y - VER_ACCELERATION * deltaTime)
+                .run { clamp(this, -MAX_VER_NEG_PLAYER_SPEED, MAX_VER_POS_PLAYER_SPEED) }
 
         moveEntity(transform, move, deltaTime)
     }
