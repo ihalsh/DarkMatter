@@ -14,7 +14,8 @@ private const val DEFAULT_FRAME_DURATION = 1 / 20f
 
 enum class AnimationType(val atlasKey: String, val playMode: PlayMode = LOOP, val speedRate: Float = 1f) {
     NONE(""),
-    DARK_MATTER("dark_matter", speedRate = 3f)
+    DARK_MATTER("dark_matter", speedRate = 3f),
+    FIRE("fire")
 }
 
 class Animation2D(

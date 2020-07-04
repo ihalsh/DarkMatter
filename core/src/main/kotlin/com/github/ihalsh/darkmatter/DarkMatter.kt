@@ -37,6 +37,7 @@ class DarkMatter : KtxGame<DarkMatterScreen>() {
             addSystem(MoveSystem())
             addSystem(DamageSystem())
             addSystem(DebugSystem())
+            addSystem(AttachSystem())
             addSystem(AnimationSystem(graphicAtlas))
             addSystem(RenderSystem(batch, gameViewport))
             addSystem(RemoveSystem())
