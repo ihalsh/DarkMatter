@@ -7,12 +7,17 @@ import com.badlogic.gdx.math.Rectangle
 import com.github.ihalsh.darkmatter.V_WIDTH
 import com.github.ihalsh.darkmatter.ecs.component.*
 import com.github.ihalsh.darkmatter.ecs.component.PowerUpType.*
+import com.github.ihalsh.darkmatter.event.GameEventCollectPowerUp
+import com.github.ihalsh.darkmatter.event.GameEventManager
+import com.github.ihalsh.darkmatter.event.GameEventType
+import com.github.ihalsh.darkmatter.event.GameEventType.*
 import ktx.ashley.*
 import ktx.collections.GdxArray
 import ktx.collections.gdxArrayOf
 import ktx.log.debug
 import ktx.log.error
 import ktx.log.logger
+import kotlin.*
 import kotlin.math.min
 
 private val LOG = logger<PowerUpSystem>()
@@ -33,7 +38,7 @@ private class SpawnPattern(
         val types: GdxArray<PowerUpType> = gdxArrayOf(type1, type2, type3, type4, type5)
 )
 
-class PowerUpSystem : IteratingSystem(allOf(PowerUpComponent::class,
+class PowerUpSystem(private val gameEventManager: GameEventManager) : IteratingSystem(allOf(PowerUpComponent::class,
         TransformComponent::class).exclude(RemoveComponent::class).get()) {
     private val playerBoundingRectangle = Rectangle()
     private val powerUpBoundingRectangle = Rectangle()
@@ -118,6 +123,12 @@ class PowerUpSystem : IteratingSystem(allOf(PowerUpComponent::class,
             SHIELD -> player[PlayerComponent.mapper]?.let { it.shield = min(it.maxShield, it.shield + SHIELD_GAIN) }
             else -> LOG.error { "Unsupported power of type ${powerUpCmp.type}" }
         }
+
+        gameEventManager.dispatchEvent(COLLECT_POWER_UP, GameEventCollectPowerUp.apply {
+                    this.player = player
+                    this.type = powerUpCmp.type
+                })
+
         powerUp.addComponent<RemoveComponent>(engine)
     }
 }
