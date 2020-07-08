@@ -8,10 +8,8 @@ import com.github.ihalsh.darkmatter.ecs.component.AnimationType.DARK_MATTER
 import com.github.ihalsh.darkmatter.ecs.component.AnimationType.FIRE
 import com.github.ihalsh.darkmatter.ecs.system.DAMAGE_AREA_HEIGHT
 import com.github.ihalsh.darkmatter.event.GameEvent
+import com.github.ihalsh.darkmatter.event.GameEvent.PlayerDeath
 import com.github.ihalsh.darkmatter.event.GameEventListener
-import com.github.ihalsh.darkmatter.event.GameEventPlayerDeath
-import com.github.ihalsh.darkmatter.event.GameEventType
-import com.github.ihalsh.darkmatter.event.GameEventType.*
 import ktx.ashley.entity
 import ktx.ashley.with
 import ktx.log.debug
@@ -21,11 +19,11 @@ import kotlin.math.min
 private val LOG = logger<GameScreen>()
 private const val MAX_DELTA_TIME = 1 / 20f
 
-class GameScreen(game: DarkMatter) : DarkMatterScreen(game), GameEventListener{
+class GameScreen(game: DarkMatter) : DarkMatterScreen(game), GameEventListener {
 
     override fun show() {
         LOG.debug { "GameScreen is shown" }
-        gameEventManager.addListener(PLAYER_DEATH, this)
+        gameEventManager.addListener(PlayerDeath::class, this)
 
         spawnShip()
 
@@ -64,10 +62,9 @@ class GameScreen(game: DarkMatter) : DarkMatterScreen(game), GameEventListener{
 //        LOG.debug { "Rendercalls: ${game.batch.renderCalls}" }
     }
 
-    override fun onEvent(type: GameEventType, data: GameEvent?) {
-        if (type == PLAYER_DEATH) {
-            data as GameEventPlayerDeath
-            spawnShip()
+    override fun onEvent(event: GameEvent) {
+        when(event) {
+            is PlayerDeath -> spawnShip()
         }
     }
 }

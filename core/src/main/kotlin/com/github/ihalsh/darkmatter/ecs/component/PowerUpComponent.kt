@@ -4,12 +4,15 @@ import com.badlogic.ashley.core.Component
 import com.badlogic.gdx.utils.Pool.Poolable
 import ktx.ashley.mapperFor
 
-enum class PowerUpType(val animationType: AnimationType) {
+enum class PowerUpType(val animationType: AnimationType,
+                       val lifeGain: Float = 0f,
+                       val shieldGain: Float = 0f,
+                       val speedGain: Float = 0f) {
     NONE(AnimationType.NONE),
-    SPEED_1(AnimationType.SPEED_1),
-    SPEED_2(AnimationType.SPEED_2),
-    LIFE(AnimationType.LIFE),
-    SHIELD(AnimationType.SHIELD)
+    SPEED_1(AnimationType.SPEED_1, speedGain = 3f),
+    SPEED_2(AnimationType.SPEED_2, speedGain = 3.75f),
+    LIFE(AnimationType.LIFE, lifeGain = 25f),
+    SHIELD(AnimationType.SHIELD, shieldGain = 25f)
 }
 
 class PowerUpComponent : Component, Poolable {
@@ -18,6 +21,7 @@ class PowerUpComponent : Component, Poolable {
     override fun reset() {
         type = PowerUpType.NONE
     }
+
     companion object {
         val mapper = mapperFor<PowerUpComponent>()
     }

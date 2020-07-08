@@ -7,27 +7,19 @@ import com.badlogic.gdx.math.Rectangle
 import com.github.ihalsh.darkmatter.V_WIDTH
 import com.github.ihalsh.darkmatter.ecs.component.*
 import com.github.ihalsh.darkmatter.ecs.component.PowerUpType.*
-import com.github.ihalsh.darkmatter.event.GameEventCollectPowerUp
+import com.github.ihalsh.darkmatter.event.GameEvent
 import com.github.ihalsh.darkmatter.event.GameEventManager
-import com.github.ihalsh.darkmatter.event.GameEventType
-import com.github.ihalsh.darkmatter.event.GameEventType.*
 import ktx.ashley.*
 import ktx.collections.GdxArray
 import ktx.collections.gdxArrayOf
 import ktx.log.debug
-import ktx.log.error
 import ktx.log.logger
-import kotlin.*
 import kotlin.math.min
 
 private val LOG = logger<PowerUpSystem>()
 private const val MAX_SPAWN_INTERVAL = 1.5f
 private const val MIN_SPAWN_INTERVAL = 0.9f
 private const val POWER_UP_SPEED = -8.75f
-private const val BOOST_1_SPEED_GAIN = 3f
-private const val BOOST_2_SPEED_GAIN = 3.75f
-private const val LIFE_GAIN = 25f
-private const val SHIELD_GAIN = 25f
 
 private class SpawnPattern(
         type1: PowerUpType = NONE,
@@ -114,20 +106,19 @@ class PowerUpSystem(private val gameEventManager: GameEventManager) : IteratingS
         val powerUpCmp = powerUp[PowerUpComponent.mapper]
         require(powerUpCmp != null) { "$powerUp should have PowerUpComponent." }
 
-        LOG.debug { "Picking up power of type ${powerUpCmp.type}" }
-
-        when (powerUpCmp.type) {
-            SPEED_1 -> player[MoveComponent.mapper]?.let { it.speed.y += BOOST_1_SPEED_GAIN }
-            SPEED_2 -> player[MoveComponent.mapper]?.let { it.speed.y += BOOST_2_SPEED_GAIN }
-            LIFE -> player[PlayerComponent.mapper]?.let { it.life = min(it.maxLife, it.life + LIFE_GAIN) }
-            SHIELD -> player[PlayerComponent.mapper]?.let { it.shield = min(it.maxShield, it.shield + SHIELD_GAIN) }
-            else -> LOG.error { "Unsupported power of type ${powerUpCmp.type}" }
+        powerUpCmp.type.run {
+            LOG.debug { "Picking up power of type $this" }
+            player[MoveComponent.mapper]?.let { move -> move.speed.y += speedGain }
+            player[PlayerComponent.mapper]?.let { player ->
+                player.life = min(player.maxLife, player.life + lifeGain)
+                player.shield = min(player.maxShield, player.shield + shieldGain)
+            }
         }
 
-        gameEventManager.dispatchEvent(COLLECT_POWER_UP, GameEventCollectPowerUp.apply {
-                    this.player = player
-                    this.type = powerUpCmp.type
-                })
+        gameEventManager.dispatchEvent(GameEvent.CollectPowerUp.apply {
+            this.player = player
+            this.type = powerUpCmp.type
+        })
 
         powerUp.addComponent<RemoveComponent>(engine)
     }

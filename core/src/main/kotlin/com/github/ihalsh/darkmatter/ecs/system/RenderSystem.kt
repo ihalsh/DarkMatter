@@ -14,7 +14,7 @@ import com.github.ihalsh.darkmatter.ecs.component.PowerUpType.SPEED_1
 import com.github.ihalsh.darkmatter.ecs.component.PowerUpType.SPEED_2
 import com.github.ihalsh.darkmatter.ecs.component.TransformComponent
 import com.github.ihalsh.darkmatter.event.*
-import com.github.ihalsh.darkmatter.event.GameEventType.COLLECT_POWER_UP
+import com.github.ihalsh.darkmatter.event.GameEvent.*
 import ktx.ashley.allOf
 import ktx.ashley.get
 import ktx.graphics.use
@@ -35,12 +35,12 @@ class RenderSystem(private val batch: Batch,
 
     override fun addedToEngine(engine: Engine?) {
         super.addedToEngine(engine)
-        gameEventManager.addListener(COLLECT_POWER_UP, this)
+        gameEventManager.addListener(CollectPowerUp::class, this)
     }
 
     override fun removedFromEngine(engine: Engine?) {
         super.removedFromEngine(engine)
-        gameEventManager.removeListener(COLLECT_POWER_UP, this)
+        gameEventManager.removeListener(CollectPowerUp::class, this)
     }
 
     override fun update(deltaTime: Float) {
@@ -81,8 +81,8 @@ class RenderSystem(private val batch: Batch,
         }
     }
 
-    override fun onEvent(type: GameEventType, data: GameEvent?) {
-        if (type == COLLECT_POWER_UP) (data as GameEventCollectPowerUp).run {
+    override fun onEvent(event: GameEvent) {
+        (event as CollectPowerUp).run {
             if (this.type == SPEED_1) backgroundScrollSpeed.y -= 0.25f
             else if (this.type == SPEED_2) backgroundScrollSpeed.y -= 0.5f
         }
