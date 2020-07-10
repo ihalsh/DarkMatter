@@ -17,7 +17,15 @@ sealed class GameEvent {
         lateinit var player: Entity
         var type = PowerUpType.NONE
 
-        override fun toString() = "CollectPowerUp(player=$player, type=$type"
+        override fun toString() = "CollectPowerUp(player=$player, type=$type)"
+    }
+
+    object PlayerHit : GameEvent() {
+        lateinit var player: Entity
+        var life = 0f
+        var maxLife = 0f
+
+        override fun toString() = "PlayerHit(player=$player, life=$life, maxLife=$maxLife)"
     }
 }
 

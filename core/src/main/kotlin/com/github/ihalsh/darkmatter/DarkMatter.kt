@@ -44,6 +44,7 @@ class DarkMatter : KtxGame<DarkMatterScreen>() {
             addSystem(MoveSystem())
             addSystem(PowerUpSystem(gameEventMenager))
             addSystem(DamageSystem(gameEventMenager))
+            addSystem(CameraShakeSystem(gameViewport.camera, gameEventMenager))
             addSystem(DebugSystem())
             addSystem(AttachSystem())
             addSystem(AnimationSystem(graphicAtlas))

@@ -103,6 +103,7 @@ class PowerUpSystem(private val gameEventManager: GameEventManager) : IteratingS
     }
 
     private fun collectPowerUp(player: Entity, powerUp: Entity) {
+
         val powerUpCmp = powerUp[PowerUpComponent.mapper]
         require(powerUpCmp != null) { "$powerUp should have PowerUpComponent." }
 

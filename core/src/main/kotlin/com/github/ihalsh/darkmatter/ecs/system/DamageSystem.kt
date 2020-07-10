@@ -33,6 +33,12 @@ class DamageSystem(private val gameEventManager: GameEventManager) : IteratingSy
                 if ((damage - this) <= 0) return
             }
             player.life -= damage
+            gameEventManager.dispatchEvent(GameEvent.PlayerHit.apply {
+                this.player = entity
+                life = player.life
+                maxLife = player.maxLife
+            })
+
             if (player.life <= 0) {
                 gameEventManager.dispatchEvent(GameEvent.PlayerDeath.apply { this.distance = player.distance })
                 entity.addComponent<RemoveComponent>(engine) { delay = DEATH_EXPLOSION_DURATION }
