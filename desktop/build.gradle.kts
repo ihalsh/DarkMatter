@@ -8,13 +8,12 @@ val mainClassName = "com.example.desktop.DesktopLauncher"
 dependencies {
     val gdxVersion: String by project
     val ktxVersion: String by project
-//    val coroutinesVersion : String by project
+    val coroutinesVersion : String by project
 
     implementation(project(":core"))
 
     implementation(kotlin("stdlib"))
-//    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:$coroutinesVersion")
-
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:$coroutinesVersion")
     implementation("com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion")
     implementation("com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop")
     implementation("io.github.libktx:ktx-app:$ktxVersion")

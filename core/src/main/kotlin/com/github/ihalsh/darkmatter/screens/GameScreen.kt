@@ -1,5 +1,6 @@
 package com.github.ihalsh.darkmatter.screens
 
+import com.badlogic.ashley.core.Engine
 import com.github.ihalsh.darkmatter.DarkMatter
 import com.github.ihalsh.darkmatter.UNIT_SCALE
 import com.github.ihalsh.darkmatter.V_WIDTH
@@ -19,7 +20,7 @@ import kotlin.math.min
 private val LOG = logger<GameScreen>()
 private const val MAX_DELTA_TIME = 1 / 20f
 
-class GameScreen(game: DarkMatter) : DarkMatterScreen(game), GameEventListener {
+class GameScreen(game: DarkMatter, private val engine: Engine = game.engine) : DarkMatterScreen(game), GameEventListener {
 
     override fun show() {
         LOG.debug { "GameScreen is shown" }
@@ -63,7 +64,7 @@ class GameScreen(game: DarkMatter) : DarkMatterScreen(game), GameEventListener {
     }
 
     override fun onEvent(event: GameEvent) {
-        when(event) {
+        when (event) {
             is PlayerDeath -> spawnShip()
         }
     }

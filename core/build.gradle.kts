@@ -13,7 +13,6 @@ dependencies {
 
     implementation(kotlin("stdlib"))
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
-
     implementation("com.badlogicgames.gdx:gdx:$gdxVersion")
     implementation("com.badlogicgames.ashley:ashley:$ashleyVersion")
 
