@@ -1,6 +1,7 @@
 package com.github.ihalsh.darkmatter.screens
 
 import com.github.ihalsh.darkmatter.DarkMatter
+import com.github.ihalsh.darkmatter.ecs.asset.SoundAsset
 import com.github.ihalsh.darkmatter.ecs.asset.TextureAsset
 import com.github.ihalsh.darkmatter.ecs.asset.TextureAtlasAsset
 import kotlinx.coroutines.joinAll
@@ -17,7 +18,8 @@ class LoadingScreen(game: DarkMatter) : DarkMatterScreen(game) {
         val startTime = System.currentTimeMillis()
         val assetRefs = gdxArrayOf(
                 TextureAsset.values().map { assets.loadAsync(it.descriptor) },
-                TextureAtlasAsset.values().map { assets.loadAsync(it.descriptor) }
+                TextureAtlasAsset.values().map { assets.loadAsync(it.descriptor) },
+                SoundAsset.values().map { assets.loadAsync(it.descriptor) }
         ).flatten()
 
         KtxAsync.launch {

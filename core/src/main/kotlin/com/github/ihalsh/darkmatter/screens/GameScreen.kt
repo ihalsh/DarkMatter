@@ -4,6 +4,7 @@ import com.badlogic.ashley.core.Engine
 import com.github.ihalsh.darkmatter.DarkMatter
 import com.github.ihalsh.darkmatter.UNIT_SCALE
 import com.github.ihalsh.darkmatter.V_WIDTH
+import com.github.ihalsh.darkmatter.ecs.asset.MusicAsset
 import com.github.ihalsh.darkmatter.ecs.component.*
 import com.github.ihalsh.darkmatter.ecs.component.AnimationType.DARK_MATTER
 import com.github.ihalsh.darkmatter.ecs.component.AnimationType.FIRE
@@ -26,6 +27,7 @@ class GameScreen(game: DarkMatter, private val engine: Engine = game.engine) : D
         LOG.debug { "GameScreen is shown" }
         gameEventManager.addListener(PlayerDeath::class, this)
 
+        audioService.play(MusicAsset.GAME)
         spawnShip()
 
         engine.entity {
@@ -60,6 +62,7 @@ class GameScreen(game: DarkMatter, private val engine: Engine = game.engine) : D
 
     override fun render(delta: Float) {
         engine.update(min(MAX_DELTA_TIME, delta))
+        audioService.update()
 //        LOG.debug { "Rendercalls: ${game.batch.renderCalls}" }
     }
 

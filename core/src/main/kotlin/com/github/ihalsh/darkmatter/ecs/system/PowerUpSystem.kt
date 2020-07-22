@@ -1,5 +1,6 @@
 package com.github.ihalsh.darkmatter.ecs.system
 
+import com.github.ihalsh.darkmatter.audio.AudioService
 import com.badlogic.ashley.core.Entity
 import com.badlogic.ashley.systems.IteratingSystem
 import com.badlogic.gdx.math.MathUtils.random
@@ -30,7 +31,8 @@ private class SpawnPattern(
         val types: GdxArray<PowerUpType> = gdxArrayOf(type1, type2, type3, type4, type5)
 )
 
-class PowerUpSystem(private val gameEventManager: GameEventManager) : IteratingSystem(allOf(PowerUpComponent::class,
+class PowerUpSystem(private val gameEventManager: GameEventManager,
+                    private val audioService: AudioService) : IteratingSystem(allOf(PowerUpComponent::class,
         TransformComponent::class).exclude(RemoveComponent::class).get()) {
     private val playerBoundingRectangle = Rectangle()
     private val powerUpBoundingRectangle = Rectangle()
@@ -114,12 +116,15 @@ class PowerUpSystem(private val gameEventManager: GameEventManager) : IteratingS
                 player.life = min(player.maxLife, player.life + lifeGain)
                 player.shield = min(player.maxShield, player.shield + shieldGain)
             }
+            audioService.play(soundAsset)
+
+            gameEventManager.dispatchEvent(GameEvent.CollectPowerUp.apply {
+                this.player = player
+                this.type = this@run
+            })
         }
 
-        gameEventManager.dispatchEvent(GameEvent.CollectPowerUp.apply {
-            this.player = player
-            this.type = powerUpCmp.type
-        })
+
 
         powerUp.addComponent<RemoveComponent>(engine)
     }

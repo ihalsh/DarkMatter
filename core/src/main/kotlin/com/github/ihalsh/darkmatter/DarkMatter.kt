@@ -1,5 +1,7 @@
 package com.github.ihalsh.darkmatter
 
+import com.github.ihalsh.darkmatter.audio.AudioService
+import com.github.ihalsh.darkmatter.audio.DefaultAudioService
 import com.badlogic.ashley.core.Engine
 import com.badlogic.ashley.core.PooledEngine
 import com.badlogic.gdx.Application.LOG_DEBUG
@@ -35,6 +37,7 @@ class DarkMatter : KtxGame<DarkMatterScreen>() {
         KtxAsync.initiate()
         AssetStorage()
     }
+    val audioService: AudioService by lazy { DefaultAudioService(assets) }
 
     val engine: Engine by lazy {
         PooledEngine().apply {
@@ -46,7 +49,7 @@ class DarkMatter : KtxGame<DarkMatterScreen>() {
                     graphicAtlas.findRegion("ship_left"),
                     graphicAtlas.findRegion("ship_right")))
             addSystem(MoveSystem())
-            addSystem(PowerUpSystem(gameEventManager))
+            addSystem(PowerUpSystem(gameEventManager, audioService))
             addSystem(DamageSystem(gameEventManager))
             addSystem(CameraShakeSystem(gameViewport.camera, gameEventManager))
             addSystem(DebugSystem())
