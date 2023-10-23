@@ -1,15 +1,35 @@
-# LibGDX Gradle Kotlin DSL template
-This is an template project for [libGDX](https://github.com/libgdx/libgdx)
-written in Kotlin and built with Gradle Kotlin DSL. Only desktop
-and android backends are available for now.
+# DarkMatterNew
 
-The gradle scripts created by the libGDX project creator use an
-outdated gradle version (4.6) and deprecated features (compile,
-classesDir, etc) This template aims to use only the most recent
-features.
+A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/tommyettinger/gdx-liftoff).
 
-The template is supposed to work with IntelliJ out of the box but 
-it might require some adjustments for other IDEs like Eclipse.
+This project was generated with a template including simple application launchers and a main class extending `Game` that sets the first screen.
 
-To use Java instead of Kotlin, replace all `kotlin("jvm")` plugin
-declarations with `java` and remove all kotlin-related dependencies.
+## Platforms
+
+- `core`: Main module with the application logic shared by all platforms.
+- `lwjgl3`: Primary desktop platform using LWJGL3.
+- `android`: Android mobile platform. Needs Android SDK.
+
+## Gradle
+
+This project uses [Gradle](http://gradle.org/) to manage dependencies.
+The Gradle wrapper was included, so you can run Gradle tasks using `gradlew.bat` or `./gradlew` commands.
+Useful Gradle tasks and flags:
+
+- `--continue`: when using this flag, errors will not stop the tasks from running.
+- `--daemon`: thanks to this flag, Gradle daemon will be used to run chosen tasks.
+- `--offline`: when using this flag, cached dependency archives will be used.
+- `--refresh-dependencies`: this flag forces validation of all dependencies. Useful for snapshot versions.
+- `android:lint`: performs Android project validation.
+- `build`: builds sources and archives of every project.
+- `cleanEclipse`: removes Eclipse project data.
+- `cleanIdea`: removes IntelliJ project data.
+- `clean`: removes `build` folders, which store compiled classes and built archives.
+- `eclipse`: generates Eclipse project data.
+- `idea`: generates IntelliJ project data.
+- `lwjgl3:jar`: builds application's runnable jar, which can be found at `lwjgl3/build/libs`.
+- `lwjgl3:run`: starts the application.
+- `test`: runs unit tests (if any).
+
+Note that most tasks that are not specific to a single project can be run with `name:` prefix, where the `name` should be replaced with the ID of a specific project.
+For example, `core:clean` removes `build` folder only from the `core` project.

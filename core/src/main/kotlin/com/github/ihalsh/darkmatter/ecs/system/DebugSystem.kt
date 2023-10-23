@@ -2,73 +2,64 @@ package com.github.ihalsh.darkmatter.ecs.system
 
 import com.badlogic.ashley.core.Entity
 import com.badlogic.ashley.systems.IntervalIteratingSystem
-import com.badlogic.gdx.Game
-import com.badlogic.gdx.Gdx.graphics
-import com.badlogic.gdx.Gdx.input
-import com.badlogic.gdx.Input
-import com.badlogic.gdx.Input.Keys.*
-import com.badlogic.gdx.math.MathUtils
-import com.badlogic.gdx.math.MathUtils.clamp
-import com.github.ihalsh.darkmatter.DarkMatter
-import com.github.ihalsh.darkmatter.V_HEIGHT
-import com.github.ihalsh.darkmatter.ecs.component.MAX_SHIELD
+import com.badlogic.gdx.Gdx
+import com.badlogic.gdx.Input.Keys.NUM_1
+import com.badlogic.gdx.Input.Keys.NUM_2
+import com.badlogic.gdx.Input.Keys.NUM_3
+import com.badlogic.gdx.Input.Keys.NUM_4
+import com.badlogic.gdx.Input.Keys.NUM_5
 import com.github.ihalsh.darkmatter.ecs.component.PlayerComponent
 import com.github.ihalsh.darkmatter.ecs.component.TransformComponent
+import com.github.ihalsh.darkmatter.utils.playerComponent
+import com.github.ihalsh.darkmatter.utils.transformComponent
 import ktx.ashley.allOf
-import ktx.ashley.get
 import ktx.ashley.getSystem
+import kotlin.math.min
 
-private const val WINDOW_INFO_UPDATE_RATE = 1 / 10f
-
-class DebugSystem : IntervalIteratingSystem(allOf(PlayerComponent::class).get(), WINDOW_INFO_UPDATE_RATE) {
+class DebugSystem : IntervalIteratingSystem(
+    allOf(PlayerComponent::class).get(), WINDOW_INFO_UPDATE_RATE
+) {
     init {
         setProcessing(true)
     }
 
     override fun processEntity(entity: Entity) {
-        val transform = entity[TransformComponent.mapper]
-        require(transform != null) { "$entity should have TransformComponent." }
-        val player = entity[PlayerComponent.mapper]
-        require(player != null) { "$entity should have PlayerComponent." }
+        val transform = entity.transformComponent
+        val player = entity.playerComponent
 
         when {
-            input.isKeyPressed(NUMPAD_1) -> stopMovement()
-            input.isKeyPressed(NUMPAD_2) -> startMovement()
-            input.isKeyPressed(S) -> increaseShield(player)
-            input.isKeyPressed(UP) -> increasePositionY(transform)
-            input.isKeyPressed(DOWN) -> decreasePositionY(transform)
-            input.isKeyPressed(K) -> killPlayer(transform, player)
+            Gdx.input.isKeyPressed(NUM_1) -> killPlayer(transform, player)
+            Gdx.input.isKeyPressed(NUM_2) -> addShield(player)
+            Gdx.input.isKeyPressed(NUM_3) -> removeShield(player)
+            Gdx.input.isKeyPressed(NUM_4) -> disableMovement()
+            Gdx.input.isKeyPressed(NUM_5) -> enableMovement()
         }
-        graphics.setTitle("DM => Life:${player.life.toInt()}, Shield:${player.shield.toInt()}")
-    }
-
-    private fun increasePositionY(transform: TransformComponent) {
-        transform.position.y = (transform.position.y + 1f).run {
-            clamp(this, 1f, V_HEIGHT - transform.size.y)
-        }
-    }
-
-    private fun decreasePositionY(transform: TransformComponent) {
-        transform.position.y = (transform.position.y - 1f).run {
-            clamp(this, 1f, V_HEIGHT - transform.size.y)
-        }
+        Gdx.graphics.setTitle("DM Debug - pos:${transform.position}, life:${player.life}")
     }
 
     private fun killPlayer(transform: TransformComponent, player: PlayerComponent) {
         transform.position.y = 1f
         player.life = 1f
-        player.life = 0f
+        player.shield = 0f
     }
 
-    private fun increaseShield(player: PlayerComponent) {
-        player.shield = maxOf(MAX_SHIELD, player.shield + 25f)
+    private fun addShield(player: PlayerComponent) {
+        player.shield = min(player.maxShield, player.shield + 25f)
     }
 
-    private fun startMovement() {
+    private fun removeShield(player: PlayerComponent) {
+        player.shield = min(player.maxShield, player.shield - 25f)
+    }
+
+    private fun disableMovement() {
+        engine.getSystem<MoveSystem>().setProcessing(false)
+    }
+
+    private fun enableMovement() {
         engine.getSystem<MoveSystem>().setProcessing(true)
     }
 
-    private fun stopMovement() {
-        engine.getSystem<MoveSystem>().setProcessing(false)
+    companion object {
+        private const val WINDOW_INFO_UPDATE_RATE = 0.25f
     }
 }

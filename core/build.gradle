@@ -1,0 +1,23 @@
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+dependencies {
+  api "com.badlogicgames.ashley:ashley:$ashleyVersion"
+  api "com.badlogicgames.gdx:gdx:$gdxVersion"
+  api "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+  // Kotlin Coroutines / Flow
+  api group: 'org.jetbrains.kotlinx', name: 'kotlinx-coroutines-core', version: coroutinesVersion
+  // Kotlin extensions for the libGDX
+  api group: 'io.github.libktx', name: 'ktx-app', version: ktxVersion
+  api group: 'io.github.libktx', name: 'ktx-log', version: ktxVersion
+  api group: 'io.github.libktx', name: 'ktx-inject', version: ktxVersion
+  api group: 'io.github.libktx', name: 'ktx-graphics', version: ktxVersion
+  api group: 'io.github.libktx', name: 'ktx-ashley', version: ktxVersion
+  api group: 'io.github.libktx', name: 'ktx-collections', version: ktxVersion
+  api group: 'io.github.libktx', name: 'ktx-async', version: ktxVersion
+  api group: 'io.github.libktx', name: 'ktx-assets-async', version: ktxVersion
+  api group: 'io.github.libktx', name: 'ktx-preferences', version: ktxVersion
+  api group: 'io.github.libktx', name: 'ktx-style', version: ktxVersion
+  api group: 'io.github.libktx', name: 'ktx-i18n', version: ktxVersion
+  api group: 'io.github.libktx', name: 'ktx-scene2d', version: ktxVersion
+  api group: 'io.github.libktx', name: 'ktx-actors', version: ktxVersion
+}

@@ -1,1 +1,0 @@
-D:\Android\LibGDX\15PuzzleKotlin\desktop\build\classes\kotlin\main\com\example\desktop\DesktopLauncher.class

@@ -2,10 +2,9 @@ package com.github.ihalsh.darkmatter.ecs.component
 
 import com.badlogic.ashley.core.Component
 import com.badlogic.gdx.utils.Pool.Poolable
+import ktx.ashley.EngineEntity
 import ktx.ashley.mapperFor
-
-const val MAX_LIFE = 100f
-const val MAX_SHIELD = 100f
+import ktx.ashley.with
 
 class PlayerComponent : Component, Poolable {
     var life = MAX_LIFE
@@ -14,6 +13,12 @@ class PlayerComponent : Component, Poolable {
     var maxShield = MAX_SHIELD
     var distance = 0f
 
+    val hasShield: Boolean
+        get() = shield > 0f
+
+    val isDead: Boolean
+        get() = life <= 0f
+
     override fun reset() {
         life = MAX_LIFE
         maxLife = MAX_LIFE
@@ -21,7 +26,11 @@ class PlayerComponent : Component, Poolable {
         maxShield = MAX_SHIELD
         distance = 0f
     }
+
     companion object {
         val mapper = mapperFor<PlayerComponent>()
+
+        const val MAX_LIFE = 100f
+        const val MAX_SHIELD = 100f
     }
 }

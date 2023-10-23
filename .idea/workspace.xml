@@ -1,50 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3b375d0-48ae-4c9a-a21a-41ce7a473543" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/android/assets/i18n/i18n.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/assets/i18n/i18n_de.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/assets/music/game.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/assets/music/gameOver.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/assets/music/menu.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/assets/shader/default.vert" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/assets/shader/outline.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/assets/sound/block.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/assets/sound/boost1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/assets/sound/boost2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/assets/sound/damage.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/assets/sound/explosion.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/assets/sound/life.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/assets/sound/shield.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/assets/sound/spawn.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/assets/ui/font11_gradient.fnt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/assets/ui/font8.fnt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/assets/ui/ui.atlas" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/assets/ui/ui.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/audio/audio.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/android/android.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/DarkMatter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/DarkMatter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/ecs/asset/Asset.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/ecs/asset/Asset.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/ecs/component/PowerUpComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/ecs/component/PowerUpComponent.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/ecs/system/PowerUpSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/ecs/system/PowerUpSystem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/screens/DarkMatterScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/screens/DarkMatterScreen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/screens/GameScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/screens/GameScreen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/screens/LoadingScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/screens/LoadingScreen.kt" afterDir="false" />
-    </list>
+    <list default="true" id="e3b375d0-48ae-4c9a-a21a-41ce7a473543" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="02c8af7508e506fc" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\isher\.android\avd\Pixel_3a_API_30.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -53,12 +24,23 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
+        <task path="$PROJECT_DIR$/android">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/core">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/lwjgl3">
           <activation />
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="DarkMatterNew" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -69,458 +51,563 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
-        <option value="Kotlin File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Damage &amp; Debug System" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1bA12lRCo6vYTicgWFYTqG1BFM0" />
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2VqUwCmQl0fVcxKrZOczUnBJXpJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="foldersAlwaysOnTop" value="false" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../!Programming/Hackerrank" />
-    <property name="not.eligible.for.single.variant.sync" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.17480469" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="show.unlinked.gradle.project.popup" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ihorsheremet/AndroidStudioProjects/DarkMatterNew&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Variables&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  }
+}</component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Android\LibGDX\DarkMatter\core\src\main\kotlin\com\github\ihalsh\darkmatter\ecs\component" />
-      <recent name="D:\Android\LibGDX\DarkMatter\desktop\src\main\kotlin\com\github\ihalsh\darkmatter" />
-      <recent name="D:\Android\LibGDX\15PuzzleKotlin\android\assets\img" />
-    </key>
-    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="screens" />
-      <recent name="com.github.ihalsh.darkmatter" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Android\LibGDX\DarkMatter\core\src\main\kotlin\com\github\ihalsh\darkmatter\ecs\component" />
-      <recent name="D:\Android\LibGDX\DarkMatter\core\src\main\kotlin\com\github\ihalsh\darkmatter\screens" />
-      <recent name="D:\Android\LibGDX\15PuzzleKotlin\android\assets" />
+      <recent name="$PROJECT_DIR$/assets/shader" />
+      <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$/core/src/main/kotlin" />
     </key>
-    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
-      <recent name="com.github.ihalsh.darkmatter.ecs.component" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/" />
+      <recent name="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/ui/skin" />
+      <recent name="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/di/providers" />
+      <recent name="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/asset" />
+      <recent name="$PROJECT_DIR$/core/src/main/kotlin/com/github/ihalsh/darkmatter/di/model" />
     </key>
     <key name="CreateKotlinClassDialog.RecentsKey">
-      <recent name="com.github.ihalsh.darkmatter" />
+      <recent name="com.github.ihalsh.darkmatter.screen" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.github.ihalsh.darkmatter.event" />
+      <recent name="com.github.ihalsh.darkmatter.screen" />
+    </key>
+    <key name="KotlinExtractInterfaceDialog.RECENT_KEYS">
+      <recent name="com.github.ihalsh.darkmatter.event" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.github.ihalsh.darkmatter.screen" />
+      <recent name="com.github.ihalsh.darkmatter.ui" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.DesktopLauncherKt">
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="android" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="android" />
+  <component name="RunManager" selected="Android App.android">
+    <configuration name="AndroidLauncher" type="AndroidRunConfigurationType" factoryName="Android App" temporary="true">
+      <module name="DarkMatterNew.android.main" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
+      <option name="MODE" value="specific_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <Java />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
+      <option name="ACTIVITY_CLASS" value="com.github.ihalsh.darkmatter.android.AndroidLauncher" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration name="android" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="DarkMatter.android.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
-        <option name="Make" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DesktopLauncherKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="desktop" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.github.ihalsh.darkmatter.DesktopLauncherKt" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/android/assets" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file enabled="true" id="idea.log" />
+    <configuration name="Lwjgl3Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.ihalsh.darkmatter.lwjgl3.Lwjgl3Launcher" />
+      <module name="DarkMatterNew.lwjgl3.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.ihalsh.darkmatter.lwjgl3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Android App.android" />
-      <item itemvalue="Kotlin.DesktopLauncherKt" />
+      <item itemvalue="Android App.AndroidLauncher" />
+      <item itemvalue="Application.Lwjgl3Launcher" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.DesktopLauncherKt" />
+        <item itemvalue="Android App.AndroidLauncher" />
+        <item itemvalue="Application.Lwjgl3Launcher" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e3b375d0-48ae-4c9a-a21a-41ce7a473543" name="Default Changelist" comment="" />
-      <created>1588059878719</created>
+      <changelist id="62cc616d-d94c-429b-a2de-5412b2a76d1a" name="Changes" comment="" />
+      <created>1695563342194</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1588059878719</updated>
-      <workItem from="1588252157592" duration="1712000" />
-      <workItem from="1588256792828" duration="693000" />
-      <workItem from="1588257524365" duration="383000" />
-      <workItem from="1588257946610" duration="959000" />
-      <workItem from="1588264001530" duration="86000" />
-      <workItem from="1588266489098" duration="3600000" />
-      <workItem from="1588270823315" duration="22000" />
-      <workItem from="1593159920189" duration="925000" />
-      <workItem from="1593160869731" duration="296000" />
-      <workItem from="1593161492921" duration="17141000" />
-      <workItem from="1593253764268" duration="13638000" />
-      <workItem from="1593335731409" duration="13081000" />
-      <workItem from="1593418992939" duration="7723000" />
-      <workItem from="1593429581266" duration="1476000" />
-      <workItem from="1593431252007" duration="5786000" />
-      <workItem from="1593513781208" duration="3471000" />
-      <workItem from="1593687613314" duration="115000" />
-      <workItem from="1593687750623" duration="2205000" />
-      <workItem from="1593793059045" duration="3896000" />
-      <workItem from="1593848548875" duration="4283000" />
-      <workItem from="1593857775434" duration="11850000" />
-      <workItem from="1593942403618" duration="1575000" />
-      <workItem from="1593944388650" duration="9996000" />
-      <workItem from="1594035124481" duration="11749000" />
-      <workItem from="1594108156783" duration="1673000" />
-      <workItem from="1594221754683" duration="6016000" />
-      <workItem from="1594283672778" duration="4508000" />
-      <workItem from="1594403701180" duration="2439000" />
-      <workItem from="1594464231344" duration="1196000" />
-      <workItem from="1594664381160" duration="599000" />
-      <workItem from="1594738046482" duration="600000" />
-      <workItem from="1594829071521" duration="345000" />
-      <workItem from="1594830318483" duration="1198000" />
-      <workItem from="1594982139656" duration="623000" />
-      <workItem from="1595068221887" duration="744000" />
-      <workItem from="1595147769098" duration="598000" />
-      <workItem from="1595234552891" duration="8840000" />
-      <workItem from="1595354246609" duration="1771000" />
-      <workItem from="1595403074987" duration="9906000" />
+      <updated>1695563342194</updated>
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
-      <created>1588247296361</created>
+      <created>1695572006214</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1588247296361</updated>
+      <updated>1695572006214</updated>
     </task>
-    <task id="LOCAL-00002" summary="Initial commit">
-      <created>1593167383093</created>
+    <task id="LOCAL-00002" summary="- add logging and DI">
+      <created>1695580065278</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1593167383093</updated>
+      <updated>1695580065278</updated>
     </task>
-    <task id="LOCAL-00003" summary="Ktx-app and Ktx-log">
-      <created>1593173040782</created>
+    <task id="LOCAL-00003" summary="- add graphics and viewport">
+      <created>1695588251077</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1593173040782</updated>
+      <updated>1695588251077</updated>
     </task>
-    <task id="LOCAL-00004" summary="Ktx-app and Ktx-log">
-      <created>1593180609978</created>
+    <task id="LOCAL-00004" summary="- add ECS">
+      <created>1695715163439</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1593180609978</updated>
+      <updated>1695715163439</updated>
     </task>
-    <task id="LOCAL-00005" summary="Ktx-graphics">
-      <created>1593183271478</created>
+    <task id="LOCAL-00005" summary="- add ECS">
+      <created>1695715582462</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1593183271478</updated>
+      <updated>1695715582462</updated>
     </task>
-    <task id="LOCAL-00006" summary="Viewports">
-      <created>1593186383814</created>
+    <task id="LOCAL-00006" summary="- add ECS">
+      <created>1695715781653</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1593186383814</updated>
+      <updated>1695715781653</updated>
     </task>
-    <task id="LOCAL-00007" summary="Viewports">
-      <created>1593187097018</created>
+    <task id="LOCAL-00007" summary="- add ECS">
+      <created>1695716002597</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1593187097018</updated>
+      <updated>1695716002597</updated>
     </task>
-    <task id="LOCAL-00008" summary="Viewports">
-      <created>1593187333041</created>
+    <task id="LOCAL-00008" summary="- add RenderSystem">
+      <created>1695727614475</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1593187333041</updated>
+      <updated>1695727614475</updated>
     </task>
-    <task id="LOCAL-00009" summary="Ashley and its components">
-      <created>1593201460413</created>
+    <task id="LOCAL-00009" summary="- add PlayerAnimationSystem and PlayerInputSystem">
+      <created>1695737861435</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1593201460413</updated>
+      <updated>1695737861435</updated>
     </task>
-    <task id="LOCAL-00010" summary="Render System">
-      <created>1593260317405</created>
+    <task id="LOCAL-00010" summary="- add RemoveSystem and MoveSystem">
+      <created>1695756157134</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1593260317405</updated>
+      <updated>1695756157134</updated>
     </task>
-    <task id="LOCAL-00011" summary="Render System">
-      <created>1593280448038</created>
+    <task id="LOCAL-00011" summary="- add TextureAtlas, assets, RemoveSystem and MoveSystem">
+      <created>1695756251032</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1593280448038</updated>
+      <updated>1695756251032</updated>
     </task>
-    <task id="LOCAL-00012" summary="Render System">
-      <created>1593281042222</created>
+    <task id="LOCAL-00012" summary="- add TextureAtlas, assets, RemoveSystem and MoveSystem">
+      <created>1695756488561</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1593281042222</updated>
+      <updated>1695756488561</updated>
     </task>
-    <task id="LOCAL-00013" summary="Player System">
-      <created>1593289804162</created>
+    <task id="LOCAL-00013" summary="- add TextureAtlas, assets, RemoveSystem and MoveSystem">
+      <created>1695757043608</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1593289804162</updated>
+      <updated>1695757043608</updated>
     </task>
-    <task id="LOCAL-00014" summary="Player System">
-      <created>1593339775900</created>
+    <task id="LOCAL-00014" summary="- add TextureAtlas, assets, RemoveSystem and MoveSystem">
+      <created>1695757127427</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1593339775900</updated>
+      <updated>1695757127427</updated>
     </task>
-    <task id="LOCAL-00015" summary="Texture Atlas">
-      <created>1593342107282</created>
+    <task id="LOCAL-00015" summary="- add DamageSystem and DebugSystem">
+      <created>1696176983971</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1593342107282</updated>
+      <updated>1696176983971</updated>
     </task>
-    <task id="LOCAL-00016" summary="Texture Atlas">
-      <created>1593342888436</created>
+    <task id="LOCAL-00016" summary="- fix timestep and add interpolation">
+      <created>1696192913821</created>
       <option name="number" value="00016" />
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1593342888436</updated>
+      <updated>1696192913821</updated>
     </task>
-    <task id="LOCAL-00017" summary="Texture Atlas">
-      <created>1593354731546</created>
+    <task id="LOCAL-00017" summary="- add AnimationSystem">
+      <created>1696703364142</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1593354731546</updated>
+      <updated>1696703364142</updated>
     </task>
-    <task id="LOCAL-00018" summary="Move System">
-      <created>1593365469203</created>
+    <task id="LOCAL-00018" summary="- add AnimationSystem">
+      <created>1696703458439</created>
       <option name="number" value="00018" />
       <option name="presentableId" value="LOCAL-00018" />
       <option name="project" value="LOCAL" />
-      <updated>1593365469203</updated>
+      <updated>1696703458439</updated>
     </task>
-    <task id="LOCAL-00019" summary="Move System">
-      <created>1593366305673</created>
+    <task id="LOCAL-00019" summary="- add AttachSystem and PowerUpSystem">
+      <created>1696782224726</created>
       <option name="number" value="00019" />
       <option name="presentableId" value="LOCAL-00019" />
       <option name="project" value="LOCAL" />
-      <updated>1593366305673</updated>
+      <updated>1696782224727</updated>
     </task>
-    <task id="LOCAL-00020" summary="Move System">
-      <created>1593419632432</created>
+    <task id="LOCAL-00020" summary="- add AttachSystem and PowerUpSystem">
+      <created>1696968941290</created>
       <option name="number" value="00020" />
       <option name="presentableId" value="LOCAL-00020" />
       <option name="project" value="LOCAL" />
-      <updated>1593419632432</updated>
+      <updated>1696968941290</updated>
     </task>
-    <task id="LOCAL-00021" summary="Damage and Debug System">
-      <created>1593431772236</created>
+    <task id="LOCAL-00021" summary="- add scrolling background">
+      <created>1696973863967</created>
       <option name="number" value="00021" />
       <option name="presentableId" value="LOCAL-00021" />
       <option name="project" value="LOCAL" />
-      <updated>1593431772236</updated>
+      <updated>1696973863967</updated>
     </task>
-    <task id="LOCAL-00022" summary="Damage and Debug System">
-      <created>1593432643407</created>
+    <task id="LOCAL-00022" summary="- add scrolling background&#10;- DI improvement">
+      <created>1697014174236</created>
       <option name="number" value="00022" />
       <option name="presentableId" value="LOCAL-00022" />
       <option name="project" value="LOCAL" />
-      <updated>1593432643407</updated>
+      <updated>1697014174236</updated>
     </task>
-    <task id="LOCAL-00023" summary="Fix your timestep">
-      <created>1593455467543</created>
+    <task id="LOCAL-00023" summary="- add scrolling background&#10;- DI improvement">
+      <created>1697053818615</created>
       <option name="number" value="00023" />
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1593455467543</updated>
+      <updated>1697053818615</updated>
     </task>
-    <task id="LOCAL-00024" summary="Animations">
-      <created>1593862307767</created>
+    <task id="LOCAL-00024" summary="- add scrolling background&#10;- DI improvement">
+      <created>1697054813479</created>
       <option name="number" value="00024" />
       <option name="presentableId" value="LOCAL-00024" />
       <option name="project" value="LOCAL" />
-      <updated>1593862307767</updated>
+      <updated>1697054813479</updated>
     </task>
-    <task id="LOCAL-00025" summary="Animations">
-      <created>1593862567985</created>
+    <task id="LOCAL-00025" summary="- add game events">
+      <created>1697128088165</created>
       <option name="number" value="00025" />
       <option name="presentableId" value="LOCAL-00025" />
       <option name="project" value="LOCAL" />
-      <updated>1593862567985</updated>
+      <updated>1697128088165</updated>
     </task>
-    <task id="LOCAL-00026" summary="Animations">
-      <created>1593872454102</created>
+    <task id="LOCAL-00026" summary="- add game events">
+      <created>1697139389201</created>
       <option name="number" value="00026" />
       <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
-      <updated>1593872454102</updated>
+      <updated>1697139389201</updated>
     </task>
-    <task id="LOCAL-00027" summary="Attachment System">
-      <created>1593875486974</created>
+    <task id="LOCAL-00027" summary="- add game events">
+      <created>1697206581404</created>
       <option name="number" value="00027" />
       <option name="presentableId" value="LOCAL-00027" />
       <option name="project" value="LOCAL" />
-      <updated>1593875486974</updated>
+      <updated>1697206581404</updated>
     </task>
-    <task id="LOCAL-00028" summary="Attachment System">
-      <created>1593887352449</created>
+    <task id="LOCAL-00028" summary="- add camera shake system">
+      <created>1697206616483</created>
       <option name="number" value="00028" />
       <option name="presentableId" value="LOCAL-00028" />
       <option name="project" value="LOCAL" />
-      <updated>1593887352449</updated>
+      <updated>1697206616483</updated>
     </task>
-    <task id="LOCAL-00029" summary="Power Up System">
-      <created>1593975463023</created>
+    <task id="LOCAL-00029" summary="- add AssetStorage">
+      <created>1697233663097</created>
       <option name="number" value="00029" />
       <option name="presentableId" value="LOCAL-00029" />
       <option name="project" value="LOCAL" />
-      <updated>1593975463023</updated>
+      <updated>1697233663097</updated>
     </task>
-    <task id="LOCAL-00030" summary="Scrolling Background">
-      <created>1594038668873</created>
+    <task id="LOCAL-00030" summary="- refactor CameraShakeSystem">
+      <created>1697267004565</created>
       <option name="number" value="00030" />
       <option name="presentableId" value="LOCAL-00030" />
       <option name="project" value="LOCAL" />
-      <updated>1594038668873</updated>
+      <updated>1697267004565</updated>
     </task>
-    <task id="LOCAL-00031" summary="Game Events">
-      <created>1594066765090</created>
+    <task id="LOCAL-00031" summary="- refactor CameraShakeSystem">
+      <created>1697267287504</created>
       <option name="number" value="00031" />
       <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
-      <updated>1594066765090</updated>
+      <updated>1697267287504</updated>
     </task>
-    <task id="LOCAL-00032" summary="Game Events">
-      <created>1594224473078</created>
+    <task id="LOCAL-00032" summary="- refactor GameEvent">
+      <created>1697276030367</created>
       <option name="number" value="00032" />
       <option name="presentableId" value="LOCAL-00032" />
       <option name="project" value="LOCAL" />
-      <updated>1594224473078</updated>
+      <updated>1697276030367</updated>
     </task>
-    <task id="LOCAL-00033" summary="Game Events (refactored)">
-      <created>1594240499070</created>
+    <task id="LOCAL-00033" summary="- refactor LoadingScreen">
+      <created>1697283770729</created>
       <option name="number" value="00033" />
       <option name="presentableId" value="LOCAL-00033" />
       <option name="project" value="LOCAL" />
-      <updated>1594240499070</updated>
+      <updated>1697283770729</updated>
     </task>
-    <task id="LOCAL-00034" summary="Camera shake">
-      <created>1594404939657</created>
+    <task id="LOCAL-00034" summary="- add AudioService">
+      <created>1697304687272</created>
       <option name="number" value="00034" />
       <option name="presentableId" value="LOCAL-00034" />
       <option name="project" value="LOCAL" />
-      <updated>1594404939657</updated>
+      <updated>1697304687272</updated>
     </task>
-    <task id="LOCAL-00035" summary="Asset Storage">
-      <created>1595267822531</created>
+    <task id="LOCAL-00035" summary="- add Preferences">
+      <created>1697314905609</created>
       <option name="number" value="00035" />
       <option name="presentableId" value="LOCAL-00035" />
       <option name="project" value="LOCAL" />
-      <updated>1595267822531</updated>
+      <updated>1697314905609</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="- add Preferences">
+      <created>1697315165593</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1697315165593</updated>
+    </task>
+    <task id="LOCAL-00037" summary="- add EventDispatcher">
+      <created>1697370511032</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1697370511032</updated>
+    </task>
+    <task id="LOCAL-00038" summary="- add Outline Shader">
+      <created>1697384796481</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1697384796481</updated>
+    </task>
+    <task id="LOCAL-00039" summary="- add Outline Shader">
+      <created>1697384824202</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1697384824202</updated>
+    </task>
+    <task id="LOCAL-00040" summary="- add UI with Scene2D">
+      <created>1697401605689</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1697401605689</updated>
+    </task>
+    <task id="LOCAL-00041" summary="- add explosion animation">
+      <created>1697748805241</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1697748805241</updated>
+    </task>
+    <task id="LOCAL-00042" summary="- add color tint shader">
+      <created>1697923911159</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1697923911159</updated>
+    </task>
+    <task id="LOCAL-00043" summary="- add HUD and GameOverScreen">
+      <created>1698002788438</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1698002788438</updated>
+    </task>
+    <task id="LOCAL-00044" summary="- add HUD and GameOverScreen">
+      <created>1698005147426</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1698005147426</updated>
+    </task>
+    <task id="LOCAL-00045" summary="- improve LoadingScreen">
+      <created>1698007278046</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1698007278046</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Improvements and refactorings">
+      <created>1698050662839</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1698050662839</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -532,115 +619,34 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <ignored-roots>
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
-    <MESSAGE value="Initial commit" />
-    <MESSAGE value="Ktx-app and Ktx-log" />
-    <MESSAGE value="Ktx-graphics" />
-    <MESSAGE value="Viewports" />
-    <MESSAGE value="Ashley and its components" />
-    <MESSAGE value="Render System" />
-    <MESSAGE value="Player System" />
-    <MESSAGE value="Texture Atlas" />
-    <MESSAGE value="Move System" />
-    <MESSAGE value="Damage and Debug System" />
-    <MESSAGE value="Fix your timestep" />
-    <MESSAGE value="Animations" />
-    <MESSAGE value="Attachment System" />
-    <MESSAGE value="Power Up System" />
-    <MESSAGE value="Scrolling Background" />
-    <MESSAGE value="Game Events" />
-    <MESSAGE value="Game Events (refactored)" />
-    <MESSAGE value="Camera shake" />
-    <MESSAGE value="Asset Storage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Asset Storage" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="687" y="254" key="#Inspections" timestamp="1595250583129">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state x="687" y="254" key="#Inspections/74.0.1974.1152@74.0.1974.1152" timestamp="1595250583129" />
-    <state x="516" y="231" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593163428908">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state x="516" y="231" key="#com.intellij.execution.impl.EditConfigurationsDialog/74.0.1974.1152@74.0.1974.1152" timestamp="1593163428908" />
-    <state x="852" y="292" key="#com.intellij.ide.util.MemberChooser" timestamp="1595417749605">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state x="852" y="292" key="#com.intellij.ide.util.MemberChooser/74.0.1974.1152@74.0.1974.1152" timestamp="1595417749605" />
-    <state x="753" y="500" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1595251207431">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state x="753" y="500" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/74.0.1974.1152@74.0.1974.1152" timestamp="1595251207431" />
-    <state x="840" y="354" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1593172162390">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state x="840" y="354" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/74.0.1974.1152@74.0.1974.1152" timestamp="1593172162390" />
-    <state x="166" y="93" width="1789" height="966" key="AVDManager" timestamp="1593163560376">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state x="166" y="93" width="1789" height="966" key="AVDManager/74.0.1974.1152@74.0.1974.1152" timestamp="1593163560376" />
-    <state x="564" y="151" key="CommitChangelistDialog2" timestamp="1595267813234">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state x="564" y="151" key="CommitChangelistDialog2/74.0.1974.1152@74.0.1974.1152" timestamp="1595267813234" />
-    <state x="842" y="331" key="FileChooserDialogImpl" timestamp="1593793331613">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state x="842" y="331" key="FileChooserDialogImpl/74.0.1974.1152@74.0.1974.1152" timestamp="1593793331613" />
-    <state width="1932" height="465" key="GridCell.Tab.0.bottom" timestamp="1595432288405">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state width="1932" height="465" key="GridCell.Tab.0.bottom/74.0.1974.1152@74.0.1974.1152" timestamp="1595432288405" />
-    <state width="1932" height="465" key="GridCell.Tab.0.center" timestamp="1595432288405">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state width="1932" height="465" key="GridCell.Tab.0.center/74.0.1974.1152@74.0.1974.1152" timestamp="1595432288405" />
-    <state width="1932" height="465" key="GridCell.Tab.0.left" timestamp="1595432288405">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state width="1932" height="465" key="GridCell.Tab.0.left/74.0.1974.1152@74.0.1974.1152" timestamp="1595432288405" />
-    <state width="1932" height="465" key="GridCell.Tab.0.right" timestamp="1595432288405">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state width="1932" height="465" key="GridCell.Tab.0.right/74.0.1974.1152@74.0.1974.1152" timestamp="1595432288405" />
-    <state x="570" y="221" key="SettingsEditor" timestamp="1593162435261">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state x="570" y="221" key="SettingsEditor/74.0.1974.1152@74.0.1974.1152" timestamp="1593162435261" />
-    <state x="783" y="318" width="540" height="524" key="StructurePopup" timestamp="1593863191865">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state x="783" y="318" width="540" height="524" key="StructurePopup/74.0.1974.1152@74.0.1974.1152" timestamp="1593863191865" />
-    <state x="653" y="309" key="Vcs.Push.Dialog.v2" timestamp="1593173022361">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state x="653" y="309" key="Vcs.Push.Dialog.v2/74.0.1974.1152@74.0.1974.1152" timestamp="1593173022361" />
-    <state x="771" y="285" width="579" height="582" key="find.popup" timestamp="1594294349246">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state x="771" y="285" width="579" height="582" key="find.popup/74.0.1974.1152@74.0.1974.1152" timestamp="1594294349246" />
-    <state x="532" y="272" key="new project wizard" timestamp="1593160564723">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state x="532" y="272" key="new project wizard/74.0.1974.1152@74.0.1974.1152" timestamp="1593160564723" />
-    <state x="703" y="303" width="700" height="530" key="recent.locations.popup" timestamp="1593354693057">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state x="703" y="303" width="700" height="530" key="recent.locations.popup/74.0.1974.1152@74.0.1974.1152" timestamp="1593354693057" />
-    <state x="718" y="269" key="run.anything.popup" timestamp="1594066090064">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state x="718" y="269" key="run.anything.popup/74.0.1974.1152@74.0.1974.1152" timestamp="1594066090064" />
-    <state x="723" y="253" width="672" height="678" key="search.everywhere.popup" timestamp="1595354502067">
-      <screen x="74" y="0" width="1974" height="1152" />
-    </state>
-    <state x="723" y="253" width="672" height="678" key="search.everywhere.popup/74.0.1974.1152@74.0.1974.1152" timestamp="1595354502067" />
+    <MESSAGE value="- add RemoveSystem and MoveSystem" />
+    <MESSAGE value="- add TextureAtlas, assets, RemoveSystem and MoveSystem" />
+    <MESSAGE value="- add DamageSystem and DebugSystem" />
+    <MESSAGE value="- fix timestep and add interpolation" />
+    <MESSAGE value="- add AnimationSystem" />
+    <MESSAGE value="- add AttachSystem and PowerUpSystem" />
+    <MESSAGE value="- add scrolling background" />
+    <MESSAGE value="- add scrolling background&#10;- DI improvement" />
+    <MESSAGE value="- add game events" />
+    <MESSAGE value="- add c" />
+    <MESSAGE value="- add camera shake system" />
+    <MESSAGE value="- add AssetStorage" />
+    <MESSAGE value="- refactor CameraShakeSystem" />
+    <MESSAGE value="- refactor GameEvent" />
+    <MESSAGE value="- refactor LoadingScreen" />
+    <MESSAGE value="- add AudioService" />
+    <MESSAGE value="- add Preferences" />
+    <MESSAGE value="- add EventDispatcher" />
+    <MESSAGE value="- add Outline Shader" />
+    <MESSAGE value="- add UI with Scene2D" />
+    <MESSAGE value="- add explosion animation" />
+    <MESSAGE value="- add color tint shader" />
+    <MESSAGE value="- add HUD and GameOverScreen" />
+    <MESSAGE value="- improve LoadingScreen" />
+    <MESSAGE value="Improvements and refactorings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improvements and refactorings" />
   </component>
 </project>

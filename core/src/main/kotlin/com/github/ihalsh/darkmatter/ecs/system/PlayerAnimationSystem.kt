@@ -6,19 +6,22 @@ import com.badlogic.ashley.core.EntityListener
 import com.badlogic.ashley.systems.IteratingSystem
 import com.badlogic.gdx.graphics.g2d.TextureRegion
 import com.github.ihalsh.darkmatter.ecs.component.FacingComponent
-import com.github.ihalsh.darkmatter.ecs.component.FacingDirection.*
 import com.github.ihalsh.darkmatter.ecs.component.GraphicComponent
 import com.github.ihalsh.darkmatter.ecs.component.PlayerComponent
+import com.github.ihalsh.darkmatter.asset.TextureAtlasAsset
+import com.github.ihalsh.darkmatter.utils.facingComponent
+import com.github.ihalsh.darkmatter.utils.graphicsComponent
 import ktx.ashley.allOf
 import ktx.ashley.get
+import ktx.assets.async.AssetStorage
 
-class PlayerAnimationSystem(
-        private val defaultRegion: TextureRegion,
-        private val leftRegion: TextureRegion,
-        private val rightRegion: TextureRegion
-) : IteratingSystem(allOf(PlayerComponent::class, FacingComponent::class, GraphicComponent::class).get()),
-        EntityListener {
-    private var lastDirection = DEFAULT
+class PlayerAnimationSystem(asset: AssetStorage) : IteratingSystem(
+    allOf(PlayerComponent::class, FacingComponent::class, GraphicComponent::class).get()
+), EntityListener {
+    private val graphicAtlas = asset[TextureAtlasAsset.GAME_GRAPHICS.descriptor]
+    private val defaultRegion: TextureRegion = graphicAtlas.findRegion("ship_base")
+    private val leftRegion: TextureRegion = graphicAtlas.findRegion("ship_left")
+    private val rightRegion: TextureRegion = graphicAtlas.findRegion("ship_right")
 
     override fun addedToEngine(engine: Engine) {
         super.addedToEngine(engine)
@@ -37,19 +40,20 @@ class PlayerAnimationSystem(
     override fun entityRemoved(entity: Entity) = Unit
 
     override fun processEntity(entity: Entity, deltaTime: Float) {
-        val graphics = entity[GraphicComponent.mapper]
-        require(graphics != null) { "$entity should have GraphicComponent to be rendered." }
-        val facing = entity[FacingComponent.mapper]
-        require(facing != null) { "$entity should have FacingComponent." }
+        val facing = entity.facingComponent
+        val graphics = entity.graphicsComponent
 
-        if (facing.direction == lastDirection && graphics.sprite.texture != null) return
+        // Return, if last direction is the same as current direction and the sprite's texture already set
+        if (facing.direction == facing.previousDirection && graphics.sprite.texture != null) return
 
-        lastDirection = facing.direction
+        facing.previousDirection = facing.direction
 
-        graphics.setSpriteRegion(when (facing.direction) {
-            LEFT -> leftRegion
-            RIGHT -> rightRegion
+        val region = when (facing.direction) {
+            FacingComponent.Direction.LEFT -> leftRegion
+            FacingComponent.Direction.RIGHT -> rightRegion
             else -> defaultRegion
-        })
+        }
+
+        graphics.setSpriteRegion(region)
     }
 }

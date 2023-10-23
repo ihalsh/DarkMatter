@@ -6,7 +6,7 @@ import com.badlogic.gdx.utils.Pool.Poolable
 import ktx.ashley.mapperFor
 
 class MoveComponent : Component, Poolable {
-    val speed = Vector2()
+    var speed = Vector2()
 
     override fun reset() {
         speed.set(0f, 0f)
