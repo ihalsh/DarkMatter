@@ -54,7 +54,7 @@ www-test/
 .gwt-tmp/
 
 ## IntelliJ, Android Studio:
-.idea/
+/.idea/
 *.ipr
 *.iws
 *.iml
